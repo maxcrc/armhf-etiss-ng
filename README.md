@@ -2,7 +2,7 @@
 
 How to run:
 <pre>
-docker run --restart=always --name etiss-ng -t -i -d --privileged -p 8080:8080 -v /opt/etiss:/opt/etiss -v /dev:/dev tasmail/armhf-etiss-ng
+docker run --restart=always --name etiss-ng -t -i -d --privileged -p 8080:8080 -v /opt/etiss:/opt/etiss -v /dev:/dev -v /etc/localtime:/etc/localtime:ro tasmail/armhf-etiss-ng
 </pre>
 
 
